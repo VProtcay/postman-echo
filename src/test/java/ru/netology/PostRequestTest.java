@@ -14,6 +14,6 @@ public class PostRequestTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body(/* --> ваша проверка здесь <-- */);
+                .body("data", equalTo("some value"));
     }
 }
